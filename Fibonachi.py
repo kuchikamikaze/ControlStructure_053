@@ -1,15 +1,13 @@
-n = int(input("Masukkan berapa banyak bilangan Fibonacci yang ingin ditampilkan: "))
+batas_maksimal = int(input("Masukkan batas maksimal angka Fibonacci: "))
 
 angka1 = 0
 angka2 = 1
 
 print("Deret Fibonacci:")
-for i in range(n):
+while angka1 <= batas_maksimal:
     print(angka1, end=" ")
     
-    # Menghitung angka berikutnya
     selanjutnya = angka1 + angka2
     
-    # Menggeser posisi angka untuk perhitungan selanjutnya
     angka1 = angka2
     angka2 = selanjutnya
